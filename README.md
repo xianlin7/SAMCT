@@ -71,7 +71,7 @@ Following [Segment Anything](https://github.com/facebookresearch/segment-anythin
     <class ID>/<dataset file folder name>/<image file name>
   ```
   (Here, "class ID" represents the label value of each category in the indicated dataset. For example, the "class ID" of the spleen, right kidney, left kidney, gallbladder, and esophagus on the BTCV dataset should be 1, 2, 3, 4, and 5, respectively.)
-- The relevant information of your data should be configured in [./utils/config.py](https://github.com/xianlin7/SAMUS/blob/main/utils/config.py).
+- The relevant information of your data should be configured in [./utils/config.py](https://github.com/xianlin7/SAMCT/blob/main/utils/config.py).
 - We will release the processed CT5M in the future 🌝.
 ## Training
 Once you have the data ready, you can start training the model.
@@ -81,7 +81,7 @@ python train.py --modelname SAMCT --task <your dataset config name>
 python train_auto_prompt.py --modelname AutoSAMCT --task <your dataset config name>
 ```
 ## Testing
-Do not forget to set the load_path in [./utils/config.py](https://github.com/xianlin7/SAMUS/blob/main/utils/config.py) before testing.
+Do not forget to set the load_path in [./utils/config.py](https://github.com/xianlin7/SAMCT/blob/main/utils/config.py) before testing.
 ```
 python testSAMCT.py --modelname SAMCT --task <your dataset config name>
 python test.py --modelname AutoSAMCT --task <your dataset config name>
