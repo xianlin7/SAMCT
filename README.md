@@ -1,7 +1,7 @@
 # SAMCT
 This repo is the official implementation for:\
 [SAMCT: Segment Any CT Allowing Labor-Free Task-Indicator Prompts.](https://arxiv.org/pdf/2403.13258.pdf)\
-(The details of our SAMCT can be found in the models directory in this repo or in the paper.)
+(The details of our SAMCT can be found in the models directory in this repo or the paper.)
 
 ## Highlights
 🏆 SAMCT supports two modes: interactive segmentation and automatic segmentation. (allowing both manual prompts and labor-free task-indicator prompts)\
@@ -27,7 +27,7 @@ Following [Segment Anything](https://github.com/facebookresearch/segment-anythin
   ```
     pip install -r requirements.txt
   ```
-(* If you have already installed our SAMUS, you can skip steps 2-4 above, and just activate the enviroment of SAMUS `conda activate SAMCT`)
+(* If you have already installed our SAMUS, you can skip steps 2-4 above, and activate the environment of SAMUS `conda activate SAMUS`)
 ## Checkpoints
 - We use checkpoint of SAM in [`vit_b`](https://github.com/facebookresearch/segment-anything) version during training SAMCT.
 - The checkpoint of SAMCT trained on CT5M will be released in the future 🌝.
@@ -70,7 +70,7 @@ Following [Segment Anything](https://github.com/facebookresearch/segment-anythin
   ```
     <class ID>/<dataset file folder name>/<image file name>
   ```
-  (Here, "class ID" represents the label value of each category in the indicated dataset. For example, the "class ID" of spleen, right kidney, left kidney, gallbladder, and esophagus on BTCV dataset should be 1, 2, 3, 4, and 5, respectively.)
+  (Here, "class ID" represents the label value of each category in the indicated dataset. For example, the "class ID" of the spleen, right kidney, left kidney, gallbladder, and esophagus on the BTCV dataset should be 1, 2, 3, 4, and 5, respectively.)
 - The relevant information of your data should be configured in [./utils/config.py](https://github.com/xianlin7/SAMUS/blob/main/utils/config.py).
 - We will release the processed CT5M in the future 🌝.
 ## Training
