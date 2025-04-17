@@ -30,7 +30,7 @@ Following [Segment Anything](https://github.com/facebookresearch/segment-anythin
 (* If you have already installed our SAMUS, you can skip steps 2-4 above, and activate the environment of SAMUS `conda activate SAMUS`)
 ## Checkpoints
 - We use checkpoint of SAM in [`vit_b`](https://github.com/facebookresearch/segment-anything) version during training SAMCT.
-- The checkpoint of SAMCT trained on CT5M will be released in the future 🌝.
+- The checkpoint of SAMCT trained on CT5M can be downloaded [here](https://drive.google.com/file/d/13YlRjVlsWv4OrAdC349g5uC7vbW7ajXC/view?usp=sharing).
 
 ## Data
 - CT5M consists of 30 publicly-available datasets:
